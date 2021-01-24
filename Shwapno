@@ -1,0 +1,2183 @@
+.MODEL LARGE
+.STACK 1000H
+.DATA
+Massege1 DB 10,13,10,13,'                 ----Welcome to Shwapno----$',10,13 
+Massege2 DB 10,13,10,13,'Enter your Choise $'
+
+Massege3 DB 10,13,'  ||                 1.Vegetable Items         ||$' 
+Massege4 DB 10,13,'  ||                 2.Meat And Fish Items     ||$'
+MassegeS5 DB 10,13,'  ||                 3.Chocolate Item          ||$'
+Massege5 DB 10,13,'  ||                 4.Snacks Items            ||$'
+Massege6 DB 10,13,'  ||                 5.Dary Items              ||$'
+Massege7 DB 10,13,'  ||                 6.Fruits Items            ||$'  
+               
+               
+Massege8 DB 10,13,10,13,'---Choise your products from the Items---$'
+  
+;Vegetables  
+Massege9 DB 10,13,'  --           1.   Capsicum            70tk/-                     --$' ;Vegetables
+Massege10 DB 10,13,'  --           2.   Eggplant             60tk/-                    --$'
+Massege11 DB 10,13,'  --           3.   Cauliflower          50tk/-                    --$'
+Massege12 DB 10,13,'  --           4.   Potato               40tk/-                    --$'
+Massege13 DB 10,13,'  --           5.   Tomato               90tk/-                    --$'
+Massege14 DB 10,13,'  --           6.   Gourd                40tk/-                    --$'
+Massege15 DB 10,13,'  --           7.   Carrot               70tk/-                    --$'
+Massege16 DB 10,13,'  --           8.   Spinach              20tk/-                    --$'
+Massege17 DB 10,13,'  --           9.   Green Papaya         30tk/-                    --$' 
+
+ 
+
+;Meat and Fish 
+                                                                 
+Massege25 DB 10,13,'  --  1.Chicken Meat                         50tk/-               --$' 
+Massege26 DB 10,13,'  --  2.Beef Meat                            90tk/-               --$' 
+Massege27 DB 10,13,'  --  3.Mutton Meat                          90tk/-               --$' 
+Massege28 DB 10,13,'  --  4.Duck Meat                            40tk/-               --$'
+Massege29 DB 10,13,'  --  5.Elish                                80tk/-               --$'
+Massege30 DB 10,13,'  --  6.Shrinp                               60tk/-               --$'
+Massege31 DB 10,13,'  --  7.Rui                                  30tk/-               --$'
+Massege32 DB 10,13,'  --  8.Molay Fish                           30tk/-               --$'
+Massege33 DB 10,13,'  --  9.Koi Fish                             80tk/-               --$'
+ 
+
+ 
+ 
+;Chocolate
+
+Massege18 DB 10,13,'  --  1.DairyMilk               30tk/-                               --$'
+Massege19 DB 10,13,'  --  2.Kitkat                  70tk/-                               --$'
+Massege20 DB 10,13,'  --  3.Dark chocolate          50tk/-                               --$' 
+Massege21 DB 10,13,'  --  4.Fivestar Chocolate      50tk/-                               --$'
+Massege22 DB 10,13,'  --  5.Bounty                  60tk/-                               --$'
+Massege23 DB 10,13,'  --  6.Munch                   60tk/-                               --$'
+Massege34 DB 10,13,'  --  7.Candy box               90tk/-                               --$'
+Massege35 DB 10,13,'  --  8.Milcotofy               50tk/-                               --$'
+Massege36 DB 10,13,'  --  9.Choco Crunch            90tk/-                               --$'
+
+ 
+ 
+ 
+ 
+ 
+ 
+;snacks
+
+Massege41 DB 10,13,'  --  1. Kurkure         50tk/-               --$'
+Massege42 DB 10,13,'  --  2. Sun             50tk/-               --$'
+Massege43 DB 10,13,'  --  3. Pringles        90tk/-               --$'
+Massege44 DB 10,13,'  --  4. Lays            80tk/-               --$'
+
+
+
+;Dary Items
+Massege45 DB 10,13,'  --  1.Powder Milk    80tk/-                --$' 
+Massege46 DB 10,13,'  --  2.Cheese         50tk/-                --$'
+Massege47 DB 10,13,'  --  3.Yogurt         80tk/-                --$'
+Massege48 DB 10,13,'  --  4.Butter         70tk/-                --$'
+
+
+
+;  Fruits Items
+Massege49 DB 10,13,'  --  1.Apple         80tk/-                 --$'
+Massege50 DB 10,13,'  --  2.Dragon fruit  90tk/-                 --$'
+Massege51 DB 10,13,'  --  3.Guava         70tk/-                 --$'
+Massege52 DB 10,13,'  --  4.Pomegranat    50tk/-                 --$'
+Massege53 DB 10,13,'  --  5.Orange        80tk/-                 --$'
+Massege54 DB 10,13,'  --  6.Grapes        30tk/-                 --$'
+
+
+
+;INVALID
+Massege55 DB 10,13,10,13,'---&&INVALID ENTRY&&---$'
+Massege56 DB 10,13,'      ---&&Try Again&&---$'
+
+
+
+Massege57 DB 10,13,10,13,'Enter your order: $'
+Massege58 DB 10,13,'Quantity / per kg: $'
+Massege59 DB 10,13,'Total Price: $'
+
+
+DRINK DB ?
+QUANTITY DB ?
+
+
+Massege60 DB 10,13,10,13,'1.Go Back to Main Menu$'
+Massege61 DB 10,13,'2.EXIT$'
+
+;STAR RESIZE
+
+
+MassegeR1 DB 10,13,'  ||                                           ||$'
+MassegeR2 DB 10,13,'  |---------------------------------------------|$'
+
+MassegeR3 DB 10,13,'  ||                                           ||$'
+
+
+MassegeR4 DB 10,13,'  ||                                                               ||$'
+MassegeR5 DB 10,13,'  -------------------------------------------------------------------$'
+
+
+
+MassegeR6 DB 10,13,'  ||                                          ||$'
+MassegeR7 DB 10,13,'  ----------------------------------------------$'
+
+
+SEJ DB 10,13,10,13,' $'
+
+.CODE
+MAIN PROC
+    MOV AX,@DATA
+    MOV DS,AX
+  TOP:
+  
+    LEA DX,Massege1
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,SEJ ;NEWLINE
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MassegeR2
+    MOV AH,9
+    INT 21H
+       
+    LEA DX,MassegeR2
+    MOV AH,9
+    INT 21H     ;BORDER
+    
+    LEA DX,MassegeR3
+    MOV AH,9
+    INT 21H   
+    
+    
+     
+    
+    LEA DX,Massege3
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege4
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MassegeS5
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege5
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege6
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege7
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MassegeR1
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MassegeR2
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MassegeR2
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege2
+    MOV AH,9
+    INT 21H
+    
+     
+     
+    MOV AH,1
+    INT 21H
+    MOV BH,AL
+    SUB BH,48
+    
+    CMP BH,1
+    JE VEGETABLES
+    
+    CMP BH,2
+    JE MFC   
+     
+    CMP BH,3
+    JE CHOCOLATES 
+    
+    
+    CMP BH,4
+    JE SNACKS
+     
+     
+    CMP BH,5
+    JE DAIRY
+    
+    CMP BH,6
+    JE FRUITS
+    
+    
+    JMP INVALID
+    
+       
+    
+    
+   VEGETABLES:
+    
+    
+    LEA DX,Massege8    ;Vegetables line
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,SEJ ;NEWLINE
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MassegeR5
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MassegeR5
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MassegeR4
+    MOV AH,9
+    INT 21H
+   
+    LEA DX,Massege9    ;item 1
+    MOV AH,9
+    INT 21H 
+    
+    
+    LEA DX,Massege10  ;item 2
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege11
+    MOV AH,9          ;3nd
+    INT 21H 
+    
+    LEA DX,Massege12
+    MOV AH,9           ;4rd
+    INT 21H
+    
+    
+    LEA DX,Massege13         ;5th
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,Massege14     ;6th
+    MOV AH,9
+    INT 21H
+            
+    
+    LEA DX,Massege15
+    MOV AH,9           ;7th
+    INT 21H
+            
+            
+    LEA DX,Massege16        ;8th
+    MOV AH,9
+    INT 21H 
+    
+    LEA DX,Massege17         ;9th
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MassegeR4
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MassegeR5
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MassegeR5
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,Massege57              
+    MOV AH,9
+    INT 21H 
+    
+    
+    MOV AH,1
+    INT 21H
+    MOV BL,AL
+    SUB BL,48 
+    
+    CMP BL,1
+    JE SEVENTY
+    
+    CMP BL,2
+    JE SIXTY
+    
+    CMP BL,3
+    JE FIFTY
+    
+    CMP BL,4
+    JE FOURTY
+    
+    CMP BL,5
+    JE NINETY
+    
+    CMP BL,6
+    JE FOURTY
+    
+    CMP BL,7
+    JE SEVENTY
+    
+    CMP BL,8
+    JE TWENTY 
+    
+    CMP BL,9
+    JE THIRTY
+    
+    ;CMP BL,10
+    ;JE SIXTY
+    
+    ;CMP BL,11
+    ;JE EIGHTY
+    
+    ;CMP BL,12
+    ;JE EIGHTY
+    
+    ;CMP BL,13
+    ;JE FOURTY
+    
+    ;CMP BL,14
+    ;JE FIFTY 
+    
+    ;CMP BL,15
+    ;JE  SEVENTY
+    
+    ;CMP BL,14
+    ;JE SEVENTY
+    
+    JMP INVALID 
+      
+   FOURTY:
+    MOV BL,4
+    LEA DX,Massege58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,Massege59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+    
+    ;GO BACK TO MAIN MENU
+    
+    LEA DX,Massege60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege2
+    MOV AH,9
+    INT 21H             ;MAIN MENU
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT
+             
+   FIFTY:
+    MOV BL,4
+    LEA DX,Massege58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,Massege59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H 
+    
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+           
+           
+    ;GO BACK TO MAIN MENU
+    
+    LEA DX,Massege60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege2
+    MOV AH,9
+    INT 21H 
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48    ;MAIN  MENU
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT
+             
+   SEVENTY:
+    MOV BL,7
+    LEA DX,Massege58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,Massege59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H 
+    
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+    
+    ;GO BACK TO MAIN MENU 
+    
+    LEA DX,Massege60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege2
+    MOV AH,9
+    INT 21H       ;MAIN MENU
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT
+         
+   EIGHTY:
+    MOV BL,8
+    LEA DX,Massege58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,Massege59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+    
+    ;GO BACK TO MAIN MENU
+    
+    LEA DX,Massege60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege2    ;MAIN MENU
+    MOV AH,9
+    INT 21H 
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT         
+    
+    JMP EXIT
+    
+    
+    
+    
+     
+     
+    MFC:
+                    ;Meat& Fish and Chocolate Line
+    LEA DX,Massege8
+    MOV AH,9
+    INT 21H
+    
+    
+    
+    LEA DX,SEJ ;NEWLINE
+    MOV AH,9
+    INT 21H
+     
+    LEA DX,MassegeR5
+    MOV AH,9
+    INT 21H
+    
+     
+    LEA DX,MassegeR5
+    MOV AH,9
+    INT 21H
+                  ;STAR BORDER
+    LEA DX,MassegeR4
+    MOV AH,9
+    INT 21H
+    
+    
+     
+    
+    LEA DX,Massege25               ;1th
+    MOV AH,9
+    INT 21H 
+    
+    LEA DX,Massege26               ;2th
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege27               ;3rd
+    MOV AH,9
+    INT 21H  
+    
+    LEA DX,Massege28               ;4th
+    MOV AH,9
+    INT 21H 
+    
+    LEA DX,Massege29               ;5th
+    MOV AH,9
+    INT 21H                        
+    
+    
+    LEA DX,Massege30               ;6th
+    MOV AH,9
+    INT 21H 
+    
+    LEA DX,Massege31               ;7th
+    MOV AH,9
+    INT 21H 
+    
+    LEA DX,Massege32               ;8th
+    MOV AH,9
+    INT 21H  
+    
+    LEA DX,Massege33               ;9th
+    MOV AH,9
+    INT 21H
+    
+    ;LEA DX,M34               ;10th
+    ;MOV AH,9
+    ;INT 21H
+    
+    
+    ;LEA DX,M35               ;11th
+    ;MOV AH,9
+    ;INT 21H 
+    
+    ;LEA DX,M36               ;12th
+    ;MOV AH,9
+    ;INT 21H      
+       
+    
+    ;;LEA DX,M37               ;13th
+    ;MOV AH,9
+    ;INT 21H 
+    
+    ;LEA DX,M38               ;13th
+    ;MOV AH,9
+    ;INT 21H 
+    
+    ;LEA DX,M39               ;15th
+    ;MOV AH,9
+    ;INT 21H
+    
+    ;LEA DX,M40               ;16th
+    ;MOV AH,9
+    ;INT 21H
+    
+    
+    LEA DX,MassegeR4
+    MOV AH,9
+    INT 21H
+                    ;STAR BORDER
+    LEA DX,MassegeR5
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MassegeR5
+    MOV AH,9
+    INT 21H 
+    
+    
+    LEA DX,Massege57              
+    MOV AH,9
+    INT 21H 
+    
+    
+    MOV AH,1
+    INT 21H
+    MOV BL,AL
+    SUB BL,48 
+    
+    CMP BL,1
+    JE FIFTY
+    
+    CMP BL,2
+    JE NINETY
+    
+    CMP BL,3
+    JE NINETY
+    
+    CMP BL,4
+    JE FOURTY
+    
+    CMP BL,5
+    JE EIGHTY
+    
+    CMP BL,6
+    JE SIXTY
+    
+    CMP BL,7
+    JE THIRTY
+    
+    CMP BL,8
+    JE THIRTY 
+    
+    CMP BL,9
+    JE EIGHTY
+    
+    ;CMP BL,10
+    ;JE SIXTY
+    
+    ;CMP BL,11
+    ;JE SIXTY
+    
+    ;CMP BL,12
+    ;JE SIXTY
+    
+    ;CMP BL,13
+    ;JE SIXTY
+    
+    ;CMP BL,14
+    ;JE THIRTY 
+    
+    ;CMP BL,15
+    ;JE  TWENTY
+    
+    ;CMP BL,14
+    ;JE TWENTY
+    
+    JMP INVALID
+    
+   TEN:
+    MOV BL,1
+    LEA DX,Massege58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,Massege59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H  
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+     
+    ;GO BACK TO MAIN MENU 
+    
+    LEA DX,Massege60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege2
+    MOV AH,9
+    INT 21H 
+    
+    MOV AH,1
+    INT 21H          
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT
+    
+   
+   
+    
+   TWENTY:
+   
+    MOV BL,2
+    LEA DX,Massege58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,Massege59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+    
+    ;GO BACK TO MAIN MENU
+    LEA DX,Massege60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege2
+    MOV AH,9
+    INT 21H 
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT 
+    
+   THIRTY:
+   
+    MOV BL,3
+    LEA DX,Massege58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,Massege59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H  
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+    
+    ;GO BACK TO MAIN MENU
+    
+    LEA DX,Massege60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege2
+    MOV AH,9
+    INT 21H 
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT
+    
+    
+   SIXTY: 
+   
+    MOV BL,6
+   
+    LEA DX,Massege58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,Massege59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H 
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+    
+    ;GO BACK TO MAIN MENU 
+    
+    LEA DX,Massege60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege61
+    MOV AH,9
+    INT 21H             ;MAIN MENU
+    
+    LEA DX,Massege2
+    MOV AH,9
+    INT 21H 
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT
+    
+      
+   NINETY:
+    MOV BL,9
+    
+    LEA DX,Massege58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,Massege59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H 
+    
+    ;GO BACK TO MAIN MENU
+    
+    LEA DX,Massege60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege2
+    MOV AH,9
+    INT 21H 
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT 
+    
+    
+    
+ 
+    
+    JMP EXIT 
+    
+    
+    
+    
+    
+    
+    
+    
+  CHOCOLATES:
+    LEA DX,Massege8
+    MOV AH,9         ;Chocolate STARTS
+    INT 21H
+    
+    LEA DX,SEJ ;NEWLINE
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MassegeR5
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MassegeR5
+    MOV AH,9
+    INT 21H      ;BORDER
+    
+    LEA DX,MassegeR4
+    MOV AH,9
+    INT 21H
+    
+    
+    
+    LEA DX,Massege18         ;1th
+    MOV AH,9
+    INT 21H 
+    
+    LEA DX,Massege19
+    MOV AH,9              ;12th
+    INT 21H
+    
+    
+    LEA DX,Massege20          ;3th
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege21
+    MOV AH,9                ;4th
+    INT 21H  
+    
+    
+    LEA DX,Massege22              ;5th
+    MOV AH,9
+    INT 21H 
+    
+    
+    LEA DX,Massege23               ;6th
+    MOV AH,9
+    INT 21H
+    
+     
+    LEA DX,Massege34               ;10th
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,Massege35               ;11th
+    MOV AH,9
+    INT 21H 
+    
+    LEA DX,Massege36               ;12th
+    MOV AH,9
+    INT 21H
+    
+    
+    
+    LEA DX,MassegeR4
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MassegeR5   ;BORDER
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MassegeR5
+    MOV AH,9
+    INT 21H   
+    
+    
+    
+    
+    LEA DX,Massege57              
+    MOV AH,9
+    INT 21H 
+    
+    
+    MOV AH,1
+    INT 21H
+    MOV BL,AL
+    SUB BL,48 
+    
+    CMP BL,1
+    JE THIRTY
+    
+    CMP BL,2
+    JE SEVENTY
+    
+    CMP BL,3
+    JE FIFTY 
+    
+    CMP BL,4
+    JE FIFTY
+    
+    CMP BL,5
+    JE SIXTY
+    
+    CMP BL,6
+    JE SIXTY
+    
+    CMP BL,7
+    JE NINETY
+    
+    CMP BL,8
+    JE FIFTY 
+    
+    CMP BL,9
+    JE NINETY
+    
+   FOURTY1:
+    MOV BL,4
+    LEA DX,Massege58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,Massege59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+    
+    ;GO BACK TO MAIN MENU
+    
+    LEA DX,Massege60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege2
+    MOV AH,9
+    INT 21H             ;MAIN MENU
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT
+ 
+   
+    
+  FIFTY1:
+    MOV BL,4
+    LEA DX,Massege58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,Massege59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H 
+    
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+           
+           
+    ;GO BACK TO MAIN MENU
+    
+    LEA DX,Massege60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege2
+    MOV AH,9
+    INT 21H 
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48    ;MAIN  MENU
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT
+  
+    
+    
+   
+   
+   
+   
+   
+   
+   SIXTY1: 
+   
+    MOV BL,6
+   
+    LEA DX,Massege58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,Massege59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H 
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+    
+    ;GO BACK TO MAIN MENU 
+    
+    LEA DX,Massege60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege61
+    MOV AH,9
+    INT 21H             ;MAIN MENU
+    
+    LEA DX,Massege2
+    MOV AH,9
+    INT 21H 
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT 
+    
+    
+    
+    
+   SEVENTY1:
+    MOV BL,7
+    LEA DX,Massege58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,Massege59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H 
+    
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+    
+    ;GO BACK TO MAIN MENU 
+    
+    LEA DX,Massege60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege2
+    MOV AH,9
+    INT 21H       ;MAIN MENU
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT
+         
+   EIGHTY1:
+    MOV BL,8
+    LEA DX,Massege58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,Massege59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+    
+    ;GO BACK TO MAIN MENU
+    
+    LEA DX,Massege60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege2    ;MAIN MENU
+    MOV AH,9
+    INT 21H 
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT         
+    
+    JMP EXIT
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  SNACKS:
+    LEA DX,Massege8
+    MOV AH,9         ;SNACKS STARTS
+    INT 21H
+    
+    LEA DX,SEJ ;NEWLINE
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MassegeR7
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MassegeR7
+    MOV AH,9
+    INT 21H     ;BORDER
+    
+    LEA DX,MassegeR6
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,Massege41               ;1th
+    MOV AH,9
+    INT 21H 
+    
+    LEA DX,Massege42               ;2th
+    MOV AH,9
+    INT 21H                         
+    
+    LEA DX,Massege43               ;3th
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege44               ;4th
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MassegeR6
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MassegeR7
+    MOV AH,9
+    INT 21H     ;BORDER
+    
+    LEA DX,MassegeR7
+    MOV AH,9
+    INT 21H 
+    
+    LEA DX,Massege57              
+    MOV AH,9
+    INT 21H 
+    
+    
+    MOV AH,1
+    INT 21H
+    MOV BL,AL
+    SUB BL,48 
+    
+    CMP BL,1
+    JE L2
+    
+    CMP BL,2
+    JE L2
+    
+    CMP BL,3
+    JE NINETY
+    
+    CMP BL,4
+    JE EIGHTY
+    
+    JMP INVALID
+    
+    
+   L1: 
+    MOV BL,8
+    JMP L4
+   
+   L2:
+    MOV BL,5
+    LEA DX,Massege58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,Massege59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+    
+    ;GO BACK TO MAIN MENU
+    
+    LEA DX,Massege60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege2
+    MOV AH,9
+    INT 21H 
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT 
+    
+   
+   L3:
+   MOV BL,5
+   JMP L4 
+   
+   
+   L4:
+    LEA DX,Massege58              
+    MOV AH,9
+    INT 21H 
+  
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,Massege59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+    
+    
+    ;GO BACK TO MAIN MENU
+    
+    
+    LEA DX,Massege60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege2
+    MOV AH,9
+    INT 21H 
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+     
+   
+ 
+    
+    JMP EXIT
+    
+    
+    
+  DAIRY:
+  
+    LEA DX,Massege8
+    MOV AH,9        ;SWEAT MEAT    STARTS
+    INT 21H 
+    
+    LEA DX,SEJ ;NEWLINE
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MassegeR7
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MassegeR7
+    MOV AH,9
+    INT 21H     ;BORDER
+    
+    LEA DX,MassegeR6
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege45               ;1th
+    MOV AH,9
+    INT 21H 
+    
+    LEA DX,Massege46               ;2th
+    MOV AH,9
+    INT 21H                         
+    
+    LEA DX,Massege47               ;3th
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege48               ;4th
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MassegeR6
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MassegeR7
+    MOV AH,9
+    INT 21H     ;BORDER
+    
+    LEA DX,MassegeR7
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,Massege57              
+    MOV AH,9
+    INT 21H 
+    
+    MOV AH,1
+    INT 21H
+    MOV BL,AL
+    SUB BL,48 
+    
+    CMP BL,1
+    JE EIGHTY
+    
+    CMP BL,2
+    JE FIFTY
+    
+    CMP BL,3
+    JE EIGHTY
+    
+    CMP BL,4
+    JE SEVENTY
+    
+    JMP INVALID
+    
+    
+   FRUITS:  
+    LEA DX,Massege8
+    MOV AH,9            ;DRINKS STARTS
+    INT 21H 
+    
+    LEA DX,SEJ ;NEWLINE
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MassegeR7
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MassegeR7
+    MOV AH,9
+    INT 21H     ;BORDER
+    
+    LEA DX,MassegeR6
+    MOV AH,9
+    INT 21H
+   
+   
+    LEA DX,Massege49               ;1th
+    MOV AH,9
+    INT 21H 
+    
+    LEA DX,Massege50               ;2th
+    MOV AH,9
+    INT 21H                         
+    
+    LEA DX,Massege51               ;3th
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege52               ;4th
+    MOV AH,9
+    INT 21H 
+    
+    LEA DX,Massege53               ;5th
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege54               ;6th
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MassegeR6
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MassegeR7
+    MOV AH,9
+    INT 21H     ;BORDER
+    
+    LEA DX,MassegeR7
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege57              
+    MOV AH,9
+    INT 21H 
+    
+    
+    MOV AH,1
+    INT 21H
+    MOV BL,AL
+    SUB BL,48 
+    
+    CMP BL,1
+    JE EIGHTY
+    
+    CMP BL,2
+    JE NINETY
+    
+    CMP BL,3
+    JE SEVENTY
+    
+    CMP BL,4
+    JE FIFTY
+    
+    CMP BL,5
+    JE EIGHTY 
+    
+    CMP BL,6
+    JE THIRTY 
+    
+    JMP INVALID
+    
+   APPLE:
+    MOV BL,8
+    JMP COMMON
+    
+   DRAGON:
+    MOV BL,6
+    JMP COMMON
+   
+    
+   GUAVA:
+    MOV BL,9
+    JMP COMMON
+    
+   POMEGRANAT:
+    MOV BL,9
+    JMP COMMON
+    
+    
+   ORANGE:
+    MOV BL,7
+    JMP COMMON
+    
+ 
+   GRAPES:
+    MOV BL,5
+    JMP COMMON
+   
+   
+    
+    
+   COMMON: 
+    LEA DX,Massege58              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,Massege59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H 
+    
+    
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+    
+    ;GO BACK TO MAIN MENU
+    
+    LEA DX,Massege60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,Massege2
+    MOV AH,9
+    INT 21H 
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT:
+    
+    
+   INVALID:
+   
+    LEA DX,Massege55
+    MOV AH,9
+    INT 21H 
+    
+    
+    LEA DX,Massege56 
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    JMP EXIT 
+    
+        
+    
+    
+     EXIT:
+    
+    MOV AH,4CH
+    INT 21H
+    MAIN ENDP
+END MAIN
+
+
+
+
